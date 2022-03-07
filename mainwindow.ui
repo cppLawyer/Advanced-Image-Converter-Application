@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>510</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>620</width>
+    <height>510</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Image Converter {cppLawyer}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>651</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>911</width>
+      <height>601</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Converter</string>
+     </attribute>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>380</y>
+        <width>411</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Segoe UI Variable Display&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>581</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>170</y>
+        <width>151</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Select File(s)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>260</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;Segoe UI&quot;;
+font: 350 12pt &quot;Segoe UI Variable Small Semilig&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Selected Files: </string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>120</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Choose Output File Type</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AAI</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>APNG</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ART</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AVIF</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AVS</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>BPG</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>BMP</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>BMP2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>BMP3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>BRF</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CIN</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CIP</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CMYK</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CMYKA</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>DCX</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>DDS</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>DEBUG</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>DIB</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>DPX</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>EPDF</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>EPI</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>EPS</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>EPSF</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>EPSI</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>EPT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>EXR</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FARBFELD</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FAX</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FITS</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FL32</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FLIF</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FPX</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FTXT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GIF</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GRAY</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GRAYA</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>HDR</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>HEIC</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>HRZ</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>HTML</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>INFO</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ISOBRL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ISOBRL6</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>JBIG</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>JNG</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>JP2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>JPT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>J2C</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>J2K</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>JPEG</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>JXR</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>JSON</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>JXL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>KERNEL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MIFF</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MONO</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MNG</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>M2V</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MPEG</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MPC</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MPR</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MSL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MTV</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MVG</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>OTB</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>P7</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PALM</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PAM</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CLIPBOARD</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PBM</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PCD</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PCDS</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PCL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PCX</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PDB</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PDF</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PFM</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PGM</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PHM</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PICON</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PICT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PNG</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PNG8</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PNG00</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PNG24</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PNG32</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PNG48</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PNG64</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PNM</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>POCKETMOD</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PPM</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PS</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PS2</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PS3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PSB</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PSD</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PTIF</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>QOI</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>RAW</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>RGB</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>RGBA</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>RGF</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SGI</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SHTML</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SPARSE-COLOR</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>STRIMG</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SUN</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SVG</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TGA</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TIFF</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TXT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>UBRL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>UBRL6</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>UIL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>UYVY</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VICAR</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VIDEO</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VIFF</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>WBMP</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>WDP</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>WEBP</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>X</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>XBM</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>XPM</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>XWD</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>YAML</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>YCbCr</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>YCbCrA</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>YUV</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>170</y>
+        <width>151</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Output Folder</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>280</y>
+        <width>171</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>Convert</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>10</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Operation Progress</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>380</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Segoe UI Variable Display&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Current Operation: </string>
+      </property>
+     </widget>
+     <zorder>progressBar</zorder>
+     <zorder>pushButton</zorder>
+     <zorder>label</zorder>
+     <zorder>comboBox</zorder>
+     <zorder>pushButton_2</zorder>
+     <zorder>pushButton_3</zorder>
+     <zorder>label_4</zorder>
+     <zorder>label_3</zorder>
+     <zorder>label_2</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Information</string>
+     </attribute>
+     <widget class="QTextBrowser" name="textBrowser_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>611</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-size:22pt; background-color:transparent;&quot;&gt;Supported Images&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-size:14pt; background-color:transparent;&quot;&gt;R/W = Read and writable&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-size:14pt; background-color:transparent;&quot;&gt;R = Only Readable&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:transparent;&quot;&gt;&lt;span style=&quot; font-size:14pt; background-color:transparent;&quot;&gt;W = Only Writable&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:22pt; background-color:transparent;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:transparent;&quot;&gt;&lt;span style=&quot; background-color:transparent;&quot;&gt;AAI : RW  -  APNG : RW  -  ART : RW -  ARW : R - AVI : R - AVIF : RW - AVS : RW - BPG : RW             BMP,BMP2,BMP3 : RW  -  BRF : W  -  CALS : R  -  CGM : R  -  CIN : RW  -  CIP : W  - CMYK : RW  -  CMYKA : RW               CR2 : R  -  CRW : R - CUBE : R  -  CUR : R  -  CUT : R  -  DCM : R  -  DCR : R  -  DCX : RW  -  DDS : RW                   DEBUG : W  -  DIB : RW  -  DJVU : R  -  DNG : R  - DOT : R  -  DPX : RW  -  EMF : R  -  EPDF : RW   -  EPI : RW           EPS : RW  - EPS2 : W  -  EPS3 : W  -  EPSF : RW  -  EPSI : RW   -  EPT : RW  -   EXR : RW  -  FARBFELD : RW             FAX : RW  -   FIG : R  -  FITS : RW  -  FL32 : RW  -  FLIF : RW  -  FPX : RW  -  FTXT : RW  -  GIF : RW  -  GPLT : R                  GRAY : RW  -  GRAYA : RW  -  HDR : RW  -  HDR : RW  -  HEIC : RW  -  HPGL : R  -  HRZ : RW  -  HTML : RW                 ICO : R  -  INFO : W  -  ISOBRL : W  -  ISOBRL6 : R -  JBIG : RW  -  JNG : RW  -  JP2 : RW  -  JPT : RW  -  J2C : RW                  J2K : RW   -   JPEG : RW  -   JXR : RW  -  JSON : W  -  JXL : RW   -  KERNEL : W  -  MAN : R   -   MAT : R                   MIFF : RW  -  MONO : RW  -  MNG : RW   -   M2V : RW   -   MPEG : RW  -   MPC : RW    -   MPR : RW                  MRW : R  -  MSL : RW  -  MTV : RW  - MVG : RW  - NEF : R   -  ORF : R   -  ORA : R  -  OTB : RW  - P7 : RW                   PALM : RW   -   PAM : W  -  CLIPBOARD : RW  -  PBM : RW  -  PCD : RW  -  PCDS : RW  -  PCL : W  -  PCX : RW                  PDB : RW  -  PDF : RW  -  PEF : R  -  PES : R   -  PFA : R  -  PFB : R   -  PFM : RW   -   PGM : RW  -  PHM : RW                   PICON : RW   -   PICT : RW   -   PIX : R   -   PNG : RW   -   PNG8 : RW  -  PNG00 : RW   -    PNG24 : RW                PNG32 : RW  -   PNG48 : RW   -    PNG64 : RW   -   PNM : RW   -   POCKETMOD : RW    -   PPM : RW     -   PS : RW                   PS2 : RW   -   PS3 : RW   -   PSB : RW  -  PSD : RW   -   PTIF : RW  -  PWP : R   -   QOI : RW   -  RAD : R   -   RAF : R RAW : RW  -   RGB : RW   -   RGB565 : R   -    RGBA : RW   -  RGF : RW   -  RLA : R  -  RLE : R   -  SCT : R                 SFW : R  -  SGI : RW  -  SHTML : W  -   SID, : MrSID  -  SPARSE-COLOR : W   -   STRIMG : RW   -  SUN : RW                  SVG : RW  -  TEXT : R   -  TGA : RW  -  TIFF : RW  -  TIM : R   -  TTF : R   -   TXT : RW  -  UBRL : W  -  UBRL6 : W        UIL : W  -  UYVY : RW   -  VICAR : RW  -   VIDEO : RW  -   VIFF : RW  -   WBMP : RW  -  WDP : RW   -   WEBP : RW                 WMF : R  -  WPG : R  -   X : RW   -   XBM : RW   -  XCF : R    -  XPM : RW   -   XWD : RW   -   X3F : R   -   YAML : W                  YCbCr : RW  -  YCbCrA : RW  -  YCbCrA : R   -  YCbCrA : RW                   &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; color:#2bf0b5;&quot;&gt;Made with love by cppLawyer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>380</y>
+        <width>591</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>cppLawyer Github</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>620</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
