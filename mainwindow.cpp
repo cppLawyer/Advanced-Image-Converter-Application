@@ -2,10 +2,8 @@
 #include "mainwindow.h"
 #include <QFileDialog>
 #include <string>
-#include <ctime>
 #include <QStandardPaths>
 #include <thread>
-#include <array>
 #include <QDir>
 #include <fstream>
 #include "Magick++.h"
@@ -54,7 +52,7 @@ void MainWindow::on_pushButton_clicked()
    //choses the file to convert
    QStringList fileNames = QFileDialog::getOpenFileNames(this,tr("Open File"),"/home",tr("Images (*aai *apng *art *arw *avi *avif *avs *bpg *bmp *bmp2 *bmp3 *cals *cgm *cin *cmyka *cr2 *crw *cube *cur *cut *dcm *dcr *dcx *dds *dib *djvu *dng *dot *dpx *emf *epdf *epi *eps *epsf *epsi *ept *exr *farbfeld *fax *fig *fits *fl32 *flif *fpx *ftxt *gif *gplt *gray *graya *hdr *heic *hpgl *hrz *html *ico *jbig *jng *jp2 *jpt *j2c *j2k *jpeg *jxr *jxl *man *mat *miff *mono *mng *m2v *mpeg *mpc *mpr *mrw *msl *mtv *mvg *nef *orf *ora *ora *otb *p7 *palm *clipboard *pbm *pcd *pcds *pcx *pdb *.pdf *pef *pes *pfa *pfb *pfm *pgm *phm *picon *pict *pix *png *png8 *png00 *png24 *png32 *png48 *png64 *pnm *pocketmod *ppm *ps *ps3 *ps2 *psb *psd *ptif *pwp *qoi *rad *raf *raw *rgb *rgb565 *rgba *rgf *rla *rle *sct *sfw *sgi *sid *mrsid *sparse-color *strimg *sun *svg *text *tga *tiff *tim *ttf *txt *uyvy *vicar *video *viff *wbmp *wdp *webp *wmf *wpg *x *xbm *xcf *xpm *xwd *x3f *ycbcr *ycbcra *yuv *jpeg *jpg *jfif)"));
 
-    for(size_t i = 0; i < fileNames.size(); ++i){
+    for(uint32_t i = 0; i < fileNames.size(); ++i){
 
        allFileDir.push_back(std::move((QDir::cleanPath(fileNames[i]).toStdString())));
 
@@ -274,7 +272,7 @@ void MainWindow::on_pushButton_3_clicked()
 
         }
         }
-     Magick::InitializeMagick((QCoreApplication::applicationDirPath().toStdString()).c_str());
+     Magick::InitializeMagick(std::move((QCoreApplication::applicationDirPath().toStdString()).c_str()));
      ui->label_2->setText(std::move(""));
      std::atomic<int> currentFIle;
      std::atomic<int> failedOpr;
@@ -290,7 +288,7 @@ void MainWindow::on_pushButton_3_clicked()
        ui->label_2->setText(std::move(QString::fromStdString(std::move(std::to_string(allFileDir.size() - failedOpr.load(std::memory_order_relaxed)))) + " Converts Were Succesfull, " + QString::fromStdString(std::to_string(failedOpr.load(std::memory_order_relaxed))) + " Files Failed To Convert"));
 
     }else{
-        ui->label_2->setText(std::move("All Converts Were Succesfull, check path: " + QString::fromStdString(destDir)  + " For The Converted Files"));
+        ui->label_2->setText(std::move("All Converts Were Succesfull, check path: " + std::move(QString::fromStdString(destDir))  + " For The Converted Files"));
     }
 
      return;
