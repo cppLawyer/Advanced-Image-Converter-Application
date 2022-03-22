@@ -11,7 +11,7 @@ ALL IMAGE FORMATS SUPPORT CONVERTER WITH GUI
 - Upcoming releases for MacOS and Linux
 
 
-if there are bugs contact me
+if there are issues contact me
 
 
 
