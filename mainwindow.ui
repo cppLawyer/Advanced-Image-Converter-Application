@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>620</width>
-    <height>510</height>
+    <width>600</width>
+    <height>500</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,12 +18,15 @@
   </property>
   <property name="maximumSize">
    <size>
-    <width>620</width>
-    <height>510</height>
+    <width>600</width>
+    <height>500</height>
    </size>
   </property>
   <property name="windowTitle">
    <string>Image Converter {cppLawyer}</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="sizePolicy">
@@ -31,6 +34,24 @@
      <horstretch>0</horstretch>
      <verstretch>0</verstretch>
     </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>600</width>
+     <height>450</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>650</width>
+     <height>550</height>
+    </size>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
    </property>
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
@@ -47,24 +68,31 @@
       <height>601</height>
      </size>
     </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
     <property name="currentIndex">
      <number>0</number>
     </property>
     <widget class="QWidget" name="tab">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <attribute name="title">
       <string>Converter</string>
      </attribute>
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>170</x>
-        <y>380</y>
-        <width>411</width>
+        <x>180</x>
+        <y>320</y>
+        <width>391</width>
         <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Segoe UI Variable Display&quot;;</string>
+       <string notr="true">font: 600 12pt &quot;Sitka Text Semibold&quot;;
+background-image: url(:/new/images/transparant.png);</string>
       </property>
       <property name="text">
        <string/>
@@ -73,11 +101,15 @@
      <widget class="QProgressBar" name="progressBar">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>10</y>
+        <x>20</x>
+        <y>400</y>
         <width>581</width>
         <height>31</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(85, 102, 153);
+</string>
       </property>
       <property name="value">
        <number>24</number>
@@ -86,28 +118,34 @@
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>170</y>
-        <width>151</width>
+        <x>10</x>
+        <y>100</y>
+        <width>171</width>
         <height>71</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/new/images/button_upload-file-s.png);
+border-image: url(:/new/images/transparant.png);
+background-image: url(:/new/images/transparant.png);
+</string>
+      </property>
       <property name="text">
-       <string>Select File(s)</string>
+       <string/>
       </property>
      </widget>
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>260</y>
+        <x>20</x>
+        <y>180</y>
         <width>321</width>
         <height>21</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 8pt &quot;Segoe UI&quot;;
-font: 350 12pt &quot;Segoe UI Variable Small Semilig&quot;;</string>
+       <string notr="true">font: 700 12pt &quot;Segoe Print&quot;;
+background-image: url(:/new/images/transparant.png);</string>
       </property>
       <property name="text">
        <string>Selected Files: </string>
@@ -117,10 +155,14 @@ font: 350 12pt &quot;Segoe UI Variable Small Semilig&quot;;</string>
       <property name="geometry">
        <rect>
         <x>220</x>
-        <y>120</y>
+        <y>50</y>
         <width>171</width>
         <height>41</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Segoe UI Symbol&quot;;
+</string>
       </property>
       <item>
        <property name="text">
@@ -776,23 +818,28 @@ font: 350 12pt &quot;Segoe UI Variable Small Semilig&quot;;</string>
      <widget class="QPushButton" name="pushButton_2">
       <property name="geometry">
        <rect>
-        <x>430</x>
-        <y>170</y>
-        <width>151</width>
-        <height>71</height>
+        <x>420</x>
+        <y>100</y>
+        <width>171</width>
+        <height>81</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/new/images/button_output-folder (1).png);
+background-image: url(:/new/images/transparant.png);
+border-image: url(:/new/images/transparant.png);</string>
+      </property>
       <property name="text">
-       <string>Output Folder</string>
+       <string/>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_3">
       <property name="geometry">
        <rect>
         <x>220</x>
-        <y>280</y>
+        <y>230</y>
         <width>171</width>
-        <height>61</height>
+        <height>71</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -801,18 +848,27 @@ font: 350 12pt &quot;Segoe UI Variable Small Semilig&quot;;</string>
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/new/images/button_convert.png);
+background-image: url(:/new/images/transparant.png);
+border-image: url(:/new/images/transparant.png);</string>
+      </property>
       <property name="text">
-       <string>Convert</string>
+       <string/>
       </property>
      </widget>
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>260</x>
-        <y>10</y>
-        <width>111</width>
+        <x>240</x>
+        <y>400</y>
+        <width>161</width>
         <height>31</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Segoe Print&quot;;
+background-image: url(:/new/images/transparant.png);</string>
       </property>
       <property name="text">
        <string>Operation Progress</string>
@@ -821,14 +877,15 @@ font: 350 12pt &quot;Segoe UI Variable Small Semilig&quot;;</string>
      <widget class="QLabel" name="label_4">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>380</y>
+        <x>20</x>
+        <y>320</y>
         <width>181</width>
         <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 12pt &quot;Segoe UI Variable Display&quot;;</string>
+       <string notr="true">font: 600 12pt &quot;Sitka Text Semibold&quot;;
+background-image: url(:/new/images/transparant.png);</string>
       </property>
       <property name="text">
        <string>Current Operation: </string>
@@ -857,6 +914,9 @@ font: 350 12pt &quot;Segoe UI Variable Small Semilig&quot;;</string>
         <height>361</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/new/images/transparant.png);</string>
+      </property>
       <property name="html">
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -873,7 +933,7 @@ p, li { white-space: pre-wrap; }
 &lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; color:#2bf0b5;&quot;&gt;Made with love by cppLawyer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; color:#5f5fde;&quot;&gt;Made with love by cppLawyer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_4">
@@ -881,12 +941,17 @@ p, li { white-space: pre-wrap; }
        <rect>
         <x>10</x>
         <y>380</y>
-        <width>591</width>
-        <height>51</height>
+        <width>601</width>
+        <height>41</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/new/images/button_visit-my-github.png);
+background-image: url(:/new/images/transparant.png);
+border-image: url(:/new/images/transparant.png);</string>
+      </property>
       <property name="text">
-       <string>cppLawyer Github</string>
+       <string/>
       </property>
      </widget>
     </widget>
@@ -897,7 +962,7 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>620</width>
+     <width>600</width>
      <height>21</height>
     </rect>
    </property>
