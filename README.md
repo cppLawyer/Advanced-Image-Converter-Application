@@ -1,11 +1,11 @@
 # Image-Converter
 
-ALL IMAGE FORMATS SUPPORT CONVERTER WITH GUI
+ALL IMAGE EXTENSIONS SUPPORTED
 
 - Easy to Use
 - Win x86 & x64
 - Made with QT Framework and C++
-- High Performance application
+- High Performance and optimized
 
 
 - Upcoming releases for MacOS and Linux
