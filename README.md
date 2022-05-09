@@ -8,8 +8,6 @@ ALL IMAGE EXTENSIONS SUPPORTED
 - High Performance and optimized
 
 
-- Upcoming releases for MacOS and Linux
-
 
 if there are issues contact me
 
