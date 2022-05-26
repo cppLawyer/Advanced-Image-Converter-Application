@@ -7,6 +7,7 @@ ALL IMAGE EXTENSIONS SUPPORTED
 - Made with QT Framework and C++
 - High Performance and Powerfull
 - Highly Optimized
+- Clean Code
 
 
 
