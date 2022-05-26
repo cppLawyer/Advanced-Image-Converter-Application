@@ -1,4 +1,4 @@
-# Image-Converter
+# Advanced Image Converter
 
 ALL IMAGE EXTENSIONS SUPPORTED
 
