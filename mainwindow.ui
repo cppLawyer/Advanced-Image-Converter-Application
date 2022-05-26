@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>360</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>493</height>
+   </size>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Image Converter {cppLawyer}</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>600</width>
+     <height>450</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>650</width>
+     <height>550</height>
+    </size>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="filesToConvertButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>171</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Select File(s)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="selectedFiles">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>321</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Selected Files: </string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="fileTypeChoiceButton">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>0</y>
+      <width>181</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;Segoe UI Symbol&quot;;
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Choose Output File Type</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AAI</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>APNG</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ART</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AVIF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AVS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BPG</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BMP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BMP2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BMP3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BRF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CIN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CIP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CMYK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CMYKA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DCX</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DDS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DEBUG</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DIB</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DPX</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EPDF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EPI</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EPS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EPSF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EPSI</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EPT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EXR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FARBFELD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FAX</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FITS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FL32</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FLIF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FPX</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FTXT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GIF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GRAY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GRAYA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HDR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HEIC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HRZ</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HTML</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>INFO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ISOBRL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ISOBRL6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JBIG</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JNG</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JP2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JPT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>J2C</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>J2K</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JPEG</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JXR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JSON</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JXL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>KERNEL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MIFF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MONO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MNG</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>M2V</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MPEG</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MPC</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MPR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MSL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MTV</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MVG</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>OTB</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>P7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PALM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PAM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CLIPBOARD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PBM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PCD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PCDS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PCL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PCX</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PDB</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PDF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PFM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PGM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PHM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PICON</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PICT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PNG</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PNG8</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PNG00</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PNG24</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PNG32</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PNG48</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PNG64</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PNM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>POCKETMOD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PPM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PS2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PS3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PSB</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PSD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PTIF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>QOI</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RAW</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RGB</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RGBA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RGF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SGI</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SHTML</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SPARSE-COLOR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>STRIMG</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SUN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SVG</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TGA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TIFF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TXT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>UBRL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>UBRL6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>UIL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>UYVY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>VICAR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>VIDEO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>VIFF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>WBMP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>WDP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>WEBP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>XBM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>XPM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>XWD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>YAML</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>YCbCr</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>YCbCrA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>YUV</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="outputFileDirectoryButton">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>0</y>
+      <width>191</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Select Output Directory</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="operationProgress">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>581</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+</string>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ConvertButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>581</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Convert</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MessageForUser">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>581</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 600 12pt &quot;Sitka Text Semibold&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="githubLinkButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>581</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>To My Github</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
