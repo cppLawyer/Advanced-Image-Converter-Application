@@ -5,7 +5,8 @@ ALL IMAGE EXTENSIONS SUPPORTED
 - Easy to Use
 - Win x86 & x64
 - Made with QT Framework and C++
-- High Performance and optimized
+- High Performance and Powerfull
+- Highly Optimized
 
 
 
